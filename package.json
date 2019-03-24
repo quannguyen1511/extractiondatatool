@@ -1,0 +1,33 @@
+{
+  "name": "extractiondatatool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transformData": "node transformData.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/google-translate-api": "^2.3.0",
+    "axios": "^0.18.0",
+    "bionode-obo": "^0.1.1",
+    "cheerio": "^1.0.0-rc.2",
+    "elasticsearch": "^15.4.1",
+    "express": "^4.16.3",
+    "fs": "0.0.1-security",
+    "google-translate": "^2.2.0",
+    "google-translate-api": "^2.3.0",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.2.17",
+    "nodemon": "^1.18.4",
+    "obo": "0.0.1",
+    "queue": "^6.0.1",
+    "queue-async": "^1.2.1",
+    "request": "^2.88.0",
+    "translate": "^1.0.4",
+    "xml2js": "^0.4.19",
+    "xml2json": "^0.11.2"
+  }
+}

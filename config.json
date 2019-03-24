@@ -1,0 +1,13 @@
+{
+  "__comment": "file cau hinh json",
+  "PORT": 3000,
+  "mongodb": {
+    "user": "quan_nguyen",
+    "password": "nguyen1511",
+    "host": "ds131784.mlab.com",
+    "port": 31784,
+    "database": "diseases"
+  },
+  "_translate_key": "trnsl.1.1.20180927T054928Z.b180f1c0e32aca4e.369bd12d351c9949c7a42ddc907397eb62134db2",
+  "translate_key": "trnsl.1.1.20190321T154628Z.1075865e45e66fec.f85149a316a0b68fa7c8f9e1e70c0867af2383c8"
+}
