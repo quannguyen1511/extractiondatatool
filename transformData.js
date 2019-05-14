@@ -47,15 +47,15 @@ fs.readFile(__dirname + "/data/HumanDO_v231.owl", async function (err, data) {
 function getSymptom(s) {
   if (!s) return null;
   s = s.replace(/_/g, ' ');
-  let keys = ["results in", "has material basis in", "transmitted by", "has symptom", 
-            "complicated by", "composed of", "derived from", "inheres in", "is a", "located in", 
-            "occurs with", "part of", "realized by", "realized by supression with", 
-            "results in formation of", "caused by", "involves", "derives from"];
+  let keys = ["results in", "has material basis in", "transmitted by", "has symptom",
+    "complicated by", "composed of", "derived from", "inheres in", "is a", "located in",
+    "occurs with", "part of", "realized by", "realized by supression with",
+    "results in formation of", "caused by", "involves", "derives from"];
   keys.forEach(key => {
-    let RegExpKey = new RegExp(key, 'g'); 
-    s = s.replace(RegExpKey, "key_in_here"); 
+    let RegExpKey = new RegExp(key, 'g');
+    s = s.replace(RegExpKey, "key_in_here");
   });
-  let arr = s.split("key_in_here"); 
+  let arr = s.split("key_in_here");
   arr.shift();
   let key2 = [' and ', '\\.', ' or ', ' that ', ' which '];
   let result = arr.join(" ");
