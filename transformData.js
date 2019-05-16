@@ -27,8 +27,6 @@ fs.readFile(__dirname + "/data/HumanDO_v231.owl", async function (err, data) {
       var InfoDiseaseEn = Iao ? Iao.replace(/_/g, " ") : null;
       var InfoDisease = InfoDiseaseEn ? await translate(InfoDiseaseEn, { to: 'vi' }) : null;
       var Symptom = getSymptom(Iao) ? await translate(getSymptom(Iao), { to: 'vi' }) : null;
-      console.log(i)
-      console.log(DiseaseId)
       var request = { DiseaseId, LabelEn, LabelVn, InfoDisease, Symptom, ParentDiseaseId };
       let x = await promiseWrapper(diseaseController, diseaseController.createDisease, request);
       if (i + 1 == arr.length) {
